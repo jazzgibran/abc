@@ -14,7 +14,7 @@ update-notify: true
 
 # Default: 2.5 ; critical strikes deal 2.5x damage.
 # Can be increased by 'Critical Strike Power'
-crit-coefficient: 2.5
+crit-coefficient: 1.5
 
 # By default, all player inventories will be updated every
 # 10 ticks which corresponds to 2 inventory updates a second.
@@ -86,10 +86,10 @@ advanced-workbench:
         simple-click: false
         # When enabled, players can open the adv. workbench
         # by right-clicking a workbench WHILE SNEAKING.
-        shift-click: true
+        shift-click: false
     # Players can click the anvil in the advanced workbench
     # to see all the available advanced crafting recipes.
-    recipe-list: true
+    recipe-list: false
 
 # Use this option if your chat management plugin is having
 # conflicts with the MMOItems chat input feature. This will
@@ -123,8 +123,8 @@ action-bar-display:
     two-handed: true
     cant-use-item: true
     mitigation: true
-    item-break: false
-    soulbound: false
+    item-break: true
+    soulbound: true
 
 # Change soulbound options here.
 soulbound:
@@ -170,6 +170,7 @@ disable-interactions:
 block-blacklist:
 - OBSIDIAN
 - BEDROCK
+- BARRIER
 
 # Allows/disables the permissions needed in order to use items/abilities.
 # General permission node for abilities: mmoitems.ability.ability-id
@@ -184,6 +185,4 @@ permissions:
 # Disables non MMOItems from being crafted in the vanilla workbench.
 # This system supports item durability, just use <MATERIAL>:<durability>
 # Add [] if the list is empty.
-disable-vanilla-recipes: []
-# - DIAMOND_PICKAXE
-# - IRON_BLOCK
+disable-vanilla-recipes: false
