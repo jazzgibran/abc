@@ -1,11 +1,11 @@
 # Tier 1 - Forest Sword
 # Damage scaling: 10-20
 FOREST_SWORD:
-  - id: 1
+  - id: 402
     name: '&2[Tier I] &aForest Sword'
     description: 'A sword imbued with the blessings of the forest.'
     material: WOODEN_SWORD
-    texture: 'diamond_sword.png'
+    texture: 'wooden_sword.png'
     type: sword
     damage-scale:
       minimum: 15
@@ -33,30 +33,30 @@ FOREST_SWORD:
 # Tier 1 - Forest Dual Sword
 # Damage scaling: 10-20
 
-FOREST_DUAL_SWORD:
-  - id: 2
+FOREST_DUAL_SWORD
+  - id: 401
     name: '&2[Tier I] &aForest Dual Sword'
-    description: 'A pair of swords imbued with the blessings of the forest.'
-    material: DIAMOND_SWORD
-    texture: 'diamond_sword.png'
+    description: 'A pair of swords imbued with the blessings of the forest. This sword can only be used if the user is holding two identical swords.'
+    material: WOODEN_SWORD
+    texture: 'wooden_sword.png'
     type: sword
     damage-scale:
-      minimum: 10
-      maximum: 20
+      minimum: 15
+      maximum: 30
     attribute-modifiers:
       - attribute: GENERIC_ATTACK_DAMAGE
         operation: ADD_SCALAR
-        amount: 1.8
+        amount: 2
       - attribute: GENERIC_ATTACK_SPEED
         operation: ADD_SCALAR
-        amount: -0.3
+        amount: -0.2
         maximum: 3.0
     passives:
       - id: fast_attack
         name: 'Fast Attack'
-        description: 'Increases attack speed when holding the sword.'
+        description: 'Increases attack speed when holding two identical Forest Dual Swords.'
         type: SWORD
-        attack-speed: 3.0
+        attack-speed: 3
         conditions:
           - type: IN_HAND
             item: '1:Forest Dual Sword'
@@ -66,3 +66,4 @@ FOREST_DUAL_SWORD:
         description: 'This bonus set is inspired by the creatures and flora of the forest.'
         items:
           - '1:Forest Dual Sword'
+          - '2:Forest Sword'
