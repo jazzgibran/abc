@@ -34,9 +34,21 @@ FOREST_STAFF:
           damage:
             minimum: 15
             maximum: 15
+      - id: forest_curse
+        name: "Forest Curse"
+        description: "The power of the forest slowly drains your life force."
+        type: STAFF
+        conditions:
+          - type: IN_HAND
+            item: "601:Forest Staff"
+        timer:
+          interval: 5
+          damage:
+            minimum: 10
+            maximum: 10
     bonus-sets:
       - id: forest
         name: "Forest Set"
         description: "This bonus set is inspired by the creatures and flora of the forest."
         items:
-          - "601:Forest Wand"
+          - "601:Forest Staff"
