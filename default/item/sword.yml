@@ -1,5 +1,5 @@
 # Tier 1 - Forest Sword
-# Damage scaling: 10-20
+# Damage scaling: 10-15
 FOREST_SWORD:
   - id: 402
     name: '&2[Tier I] &aForest Sword'
@@ -8,8 +8,8 @@ FOREST_SWORD:
     texture: 'wooden_sword.png'
     type: sword
     damage-scale:
-      minimum: 15
-      maximum: 20
+      minimum: 10
+      maximum: 15
     attribute-modifiers:
       - attribute: GENERIC_ATTACK_DAMAGE
         operation: ADD_SCALAR
@@ -19,11 +19,33 @@ FOREST_SWORD:
         amount: -0.2
         maximum: 1.0
     passives:
-      - id: fast_attack
-        name: 'Fast Attack'
-        description: 'Increases attack speed when holding the Sword.'
+      - id: tank
+        name: 'Tank'
+        description: 'Increases health points and defense when holding the Forest Sword with a shield.'
         type: SWORD
-        attack-speed: 3
+        conditions:
+          - type: IN_HAND
+            item: '402:Forest Sword'
+          - type: OFF_HAND
+            item: SHIELD
+        attributes:
+          - attribute: GENERIC_MAX_HEALTH
+            operation: ADD_SCALAR
+            amount: 20
+          - attribute: GENERIC_ARMOR
+            operation: ADD_SCALAR
+            amount: 5
+      - id: hostile_aggro
+        name: 'Hostility UP'
+        description: 'Increases the chance that mobs will target the player when holding the Forest Sword.'
+        type: SWORD
+        attributes:
+          - attribute: GENERIC_FOLLOW_RANGE
+            operation: ADD_SCALAR
+            amount: 5
+          - attribute: GENERIC_MOVEMENT_SPEED
+            operation: MULTIPLY_SCALAR_1
+            amount: 0.75
     bonus-sets:
       - id: forest
         name: 'Forest Set'
