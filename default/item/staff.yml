@@ -17,13 +17,13 @@ FOREST_STAFF:
         skill-1:
           id: forest_blast
           name: "Forest Blast"
-          description: "Deal 50-70 damage to the target."
+          description: "Deal 30-40 damage to the target."
           type: RIGHT_CLICK
           cooldown: 10
           range: 10
           damage:
-            minimum: 50
-            maximum: 70
+            minimum: 30
+            maximum: 40
         skill-2:
           id: forest_arrow
           name: "Forest Arrow"
