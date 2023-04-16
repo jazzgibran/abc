@@ -163,3 +163,13 @@ MATERIAL:
     display: PAPER
     name: 'Material'
     parent: 'MISCELLANEOUS'
+
+SCROLLS:
+    display: PAPER
+    name: 'Scrolls'
+    parent: 'MISCELLANEOUS'
+
+MACE:
+    display: IRON_AXE
+    name: 'Mace'
+    parent: 'HAMMER'
