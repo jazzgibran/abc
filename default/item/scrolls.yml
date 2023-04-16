@@ -1,1 +1,17 @@
-
+# Forest Scroll
+# Description: A scroll that enhances the user's damage against forest type monsters.
+FOREST_SCROLL:
+  - id: 460
+    name: '&2Forest Strike Scroll'
+    description: 'A scroll that enhances the user''s damage against forest type monsters.'
+    material: PAPER
+    texture: 'paper.png'
+    type: scroll
+    consumable: false
+    equipment:
+      allowed:
+        - dagger
+    attributes:
+      damage-against-forest-monsters:
+        amount: 1.5
+        type: MULTIPLIER
