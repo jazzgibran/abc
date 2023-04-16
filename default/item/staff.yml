@@ -1,72 +1,42 @@
-EARTH_STAFF:
-  material: SAPLING
-  name: '&fEarth Staff'
-  enchants:
-    DURABILITY: 1
-  hide-enchants: true
-  movement-speed: 0.005
-  attack-damage: 16.0=18.0
-  attack-speed: 0.4
-  critical-strike-chance: 18.0
-  critical-strike-power: 49.0
-  range: 15.0
-  two-handed: true
-  perm-effects:
-    JUMP: 2
-  craft-enabled: true
-  craft:
-  - SAPLING EMERALD SAPLING
-  - EMERALD STICK EMERALD
-  - SAPLING EMERALD SAPLING
-  element:
-    earth:
-      damage: 23.0
-  gem-sockets: 2.0
-  ability:
-    right-click:
-      type: EARTHQUAKE
-      mode: SHIFT_RIGHT_CLICK
-      cooldown: 28.0
-      damage: 5.0
-      amplifier: 2.0
-      duration: 2.0
-    on-hit:
-      type: SLOW
-      mode: ON_HIT
-      cooldown: 39.0
-      amplifier: 4.0
-      duration: 2.0
-  lore:
-  - '&7An extremely powerful weapon.'
-  - '&7Use it &f&nwisely&7.'
-  tier: '&eVery Rare'
-  disable-crafting: true
-  disable-smelting: true
-  disable-interaction: true
-  required-level: 30.0
-LIGHTNING_STAFF:
-  material: STICK
-  name: '&f&lLightning Staff'
-  required-level: 3.0
-  attack-damage: 8.0=12.0
-  attack-speed: 0.3=0.5
-  staff-spirit: LIGHTNING_SPIRIT
-  gem-sockets: 2.0
-  range: 45.0
-  ability:
-    on-hit:
-      type: STARFALL
-      mode: ON_HIT
-      damage: 5.0
-      cooldown: 30.0
-BONE_STAFF:
-  material: BONE
-  disable-interaction: false
-  disable-crafting: true
-  required-level: 3.0
-  attack-damage: 4.0=6.0
-  attack-speed: 0.4
-  tier: TRASH
-  magic-damage: 5.0=9.0
-  lore: []
-  name: '&fBone Staff'
+# Tier 1 - Forest Staff
+FOREST_STAFF:
+  - id: 601
+    name: "&2[Tier I] &aForest Staff"
+    description: "A magical staff imbued with the power of the forest."
+    material: STICK
+    texture: "stick.png"
+    type: wand
+    damage-scale:
+      minimum: 0
+      maximum: 0
+    passives:
+      - id: forest_magic
+        name: "Forest Magic"
+        description: "Unleash the power of the forest with magical spells."
+        type: WAND
+        skill-1:
+          id: forest_blast
+          name: "Forest Blast"
+          description: "Deal 50-70 damage to the target."
+          type: RIGHT_CLICK
+          cooldown: 10
+          range: 10
+          damage:
+            minimum: 50
+            maximum: 70
+        skill-2:
+          id: forest_arrow
+          name: "Forest Arrow"
+          description: "Deal 15 damage to the target."
+          type: SHIFT_RIGHT_CLICK
+          cooldown: 1
+          range: 10
+          damage:
+            minimum: 15
+            maximum: 15
+    bonus-sets:
+      - id: forest
+        name: "Forest Set"
+        description: "This bonus set is inspired by the creatures and flora of the forest."
+        items:
+          - "601:Forest Wand"
