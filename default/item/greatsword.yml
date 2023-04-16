@@ -6,7 +6,7 @@ FOREST_GREATSWORD:
     description: 'A greatsword imbued with the blessings of the forest.'
     material: WOODEN_SWORD
     texture: 'wooden_sword.png'
-    type: sword
+    type: greatsword
     damage-scale:
       minimum: 40
       maximum: 50
