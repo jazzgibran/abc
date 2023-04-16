@@ -29,7 +29,7 @@ FOREST_SWORD:
         name: 'Forest Set'
         description: 'This bonus set is inspired by the creatures and flora of the forest.'
         items:
-          - '1:Forest Sword'
+          - '402:Forest Sword'
 # Tier 1 - Forest Dual Sword
 # Damage scaling: 10-20
 
@@ -65,5 +65,4 @@ FOREST_DUAL_SWORD:
         name: 'Forest Set'
         description: 'This bonus set is inspired by the creatures and flora of the forest.'
         items:
-          - '1:Forest Dual Sword'
-          - '2:Forest Sword'
+          - '401:Forest Dual Sword'
