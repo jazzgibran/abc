@@ -53,7 +53,7 @@ FOREST_SWORD:
         items:
           - '402:Forest Sword'
 # Tier 1 - Forest Dual Sword
-# Damage scaling: 10-20
+# Damage scaling: 20-30
 
 FOREST_DUAL_SWORD:
   - id: 401
@@ -63,7 +63,7 @@ FOREST_DUAL_SWORD:
     texture: 'wooden_sword.png'
     type: sword
     damage-scale:
-      minimum: 15
+      minimum: 20
       maximum: 30
     attribute-modifiers:
       - attribute: GENERIC_ATTACK_DAMAGE
