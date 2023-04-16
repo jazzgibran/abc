@@ -59,10 +59,20 @@ FOREST_DUAL_SWORD:
         attack-speed: 3
         conditions:
           - type: IN_HAND
-            item: '1:Forest Dual Sword'
+            item: '401:Forest Dual Sword'
+      - id: dual_strike
+        name: 'Dual Strike'
+        description: 'Increases damage by 50% when holding two identical Forest Dual Swords.'
+        type: SWORD
+        attribute: GENERIC_ATTACK_DAMAGE
+        operation: MULTIPLY_SCALAR_1
+        amount: 1.5
+        conditions:
+          - type: IN_OFFHAND
+            item: '401:Forest Dual Sword'
     bonus-sets:
       - id: forest
         name: 'Forest Set'
         description: 'This bonus set is inspired by the creatures and flora of the forest.'
         items:
-          - '401:Forest Dual Sword'
+          - '401:Forest Dual Sword'"
