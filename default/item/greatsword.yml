@@ -26,8 +26,8 @@ FOREST_GREATSWORD:
       - attribute: GENERIC_CRIT_CHANCE
         name: 'Critical Hit'
         operation: ADD_SCALAR
-        amount: 0.1
-        maximum: 100
+        amount: 0.5
+        maximum: 1
     bonus-sets:
       - id: forest
         name: 'Forest Set'
