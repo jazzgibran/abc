@@ -5,7 +5,7 @@ FOREST_STAFF:
     description: "A magical staff imbued with the power of the forest."
     material: STICK
     texture: "stick.png"
-    type: wand
+    type: staff
     damage-scale:
       minimum: 0
       maximum: 0
@@ -13,7 +13,7 @@ FOREST_STAFF:
       - id: forest_magic
         name: "Forest Magic"
         description: "Unleash the power of the forest with magical spells."
-        type: WAND
+        type: STAFF
         skill-1:
           id: forest_blast
           name: "Forest Blast"
