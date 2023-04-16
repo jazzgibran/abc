@@ -1,6 +1,6 @@
 # Tier 1 - Forest Shield
 FOREST_SHIELD:
-  - id: 501
+  - id: 101
     name: "&2[Tier I] &aForest Shield"
     description: "A sturdy shield imbued with the power of the forest."
     material: SHIELD
